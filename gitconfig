@@ -1,0 +1,20 @@
+# Identity lives in ~/.gitconfig.local (untracked):
+#   [user]
+#     name = Your Name
+#     email = you@example.com
+[include]
+	path = ~/.gitconfig.local
+[init]
+	defaultBranch = main
+[pull]
+	rebase = true
+[push]
+	autoSetupRemote = true
+[fetch]
+	prune = true
+[rebase]
+	autostash = true
+[core]
+	excludesfile = ~/.gitignore_global
+[url "git@github.com:"]
+	insteadOf = https://github.com/
